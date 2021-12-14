@@ -2,8 +2,11 @@
 ## Implementación de un entorno de integración continua (CI/CD)
 ### INTEGRANTES:
 Edward Luis Huayllasco Carlos
+
 Denis Pumaraime Espinoza
+
 Solange Aracely Romero Chacón
+
 Santiago Javier Vilca Limachi
 
 ## PROYECTO:
