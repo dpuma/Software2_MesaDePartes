@@ -9,11 +9,11 @@ Solange Aracely Romero Chacón
 
 Santiago Javier Vilca Limachi
 
-## PROYECTO:
+## PROYECTO
 Anderson Bastidas, https://github.com/Anders87x/Tutorial_MesaDePartes 
 
 ### Propósito
 ### Funcionalidades
 ### Arquitectura
 
-## PLAN:
+## PLAN
