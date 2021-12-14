@@ -35,7 +35,7 @@
 
         case 'mostrar':
             $datos=$menu->get_menu_x_id($_POST["men_id"]);
-            if(is_array($datos)==true and count($datos)>0){
+            if(is_array($datos)==true && count($datos)>0){
                 foreach($datos as $row)
                 {
                     $output["men_id"] = $row["men_id"];
