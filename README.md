@@ -3,7 +3,7 @@
 ### INTEGRANTES:
 Edward Luis Huayllasco Carlos
 
-Denis Pumaraime Espinoza
+Dennis Pumaraime Espinoza
 
 Solange Aracely Romero Chacón
 
