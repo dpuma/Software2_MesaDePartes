@@ -2,10 +2,10 @@
 
 namespace App\Conexion;
 
-session_start();
-class Conectar {
+//session_start();
+class Conexion {
 	protected $dbh;
-		protected function Conexion(){
+		public function conectar(){
 			try {
 				$conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=mesadepartes","root","");
 				

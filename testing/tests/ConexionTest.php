@@ -1,22 +1,36 @@
 <?php
 
-//use App\Calculadora\Calculadora;
-//use "C:\Users\Dennis\Documents\Github\Software2_MesaDePartes\config\Conexion";
-use App\Conexion\Conectar;
+use App\Conexion\Conexion;
 
 class ConexionTest extends \PHPUnit\Framework\TestCase {
 
-	public function test_comprobar_conexion() {
+    public function getConnection() {
+        $pdo = new PDO("mysql:host=localhost;dbname=mesadepartes", "root", "");
+        return $this->createDefaultDBConnection($pdo, "testconnection");
+    }
 
-		$conectar = new Conectar; 
-		$conn = $conectar->Conexion();
+     public function test_conexion() {
 
-		$this->assertEquals(true, $conn);
+        $d = new Conexion();
+        $d->conectar();
+
+        $result = $d->findAll();
+
+        $this->assertEquals(count($result), 1);
+
 /*
-		if (!$conn) {
-    		die("Connection failed: " . mysqli_connect_error());
-		}
-		echo "Connected successfully";
-		mysqli_close($conn);*/
-	}
+        $hotel = new Hotel(array(
+            'nombre' => 'Hotel Ritc Madrid',
+            'estrellas' => 5,
+            'tipoHabitacion' => 1,
+            'ciudad' => 1
+        ));
+        $hotel->saveHotel($d->conn);
+
+        $result = $d->findAll();
+
+        $this->assertEquals(count($result), 2);*/
+    }
+
+
 }
