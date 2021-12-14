@@ -9,7 +9,7 @@
 				$password = $_POST["password"];
 				$correo = $_POST["correo"];
 
-				if(empty($correo) and empty($password)){
+				if(empty($correo) && empty($password)){
 					header("Location:".Conectar::ruta()."index.php?m=2");
 					exit();
 				}
@@ -20,7 +20,7 @@
 				$sql->bindValue(2, $password);
 				$sql->execute();
 				$resultado = $sql->fetch();
-					if(is_array($resultado) and count($resultado)>0){
+					if(is_array($resultado) && count($resultado)>0){
 						$_SESSION["usu_id"] = $resultado["usu_id"];
                         $_SESSION["usu_nom"] = $resultado["usu_nom"];
                         $_SESSION["usu_ape"] = $resultado["usu_ape"];
