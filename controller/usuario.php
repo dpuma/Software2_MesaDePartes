@@ -23,6 +23,9 @@
             echo json_encode( $datos);
         break;
 
+        default:
+            error();
+        break;
     }
 
 ?>
