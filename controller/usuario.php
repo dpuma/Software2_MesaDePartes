@@ -8,7 +8,7 @@
         case "guardar":
             $datos = $usuario->get_correo_usuario($_POST["usu_correo"]);
             if($_POST["usu_pass1"] == $_POST["usu_pass2"]){
-                if(is_array($datos)==true and count($datos)==0){
+                if(is_array($datos)==true && count($datos)==0){
                     $usuario->insert_usuario($_POST["usu_nom"],$_POST["usu_ape"],$_POST["usu_correo"],$_POST["usu_pass1"]);
                 }else{
                     echo "correo";
