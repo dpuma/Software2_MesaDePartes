@@ -1,0 +1,1 @@
+2 2jsXšhr#view/NuevoRegistro/nuevoregistro.js

@@ -1,0 +1,1 @@
+1 2phpXhr#view/NuevoRegistro/modalarchivo.php

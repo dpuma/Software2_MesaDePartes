@@ -18,7 +18,8 @@ class Conectar {
 		}
 
 		public function ruta(){
-			return "http://localhost:90/PERSONAL_mesadepartes/";
+			//return "http://localhost:90/PERSONAL_mesadepartes/";
+			return "http://localhost:80/Software2_MesaDePartes/";
 		}
 	}
 ?>

@@ -1,0 +1,1 @@
+ 2jsXfhr'view/ConsultarStatus/consultarstatus.js
