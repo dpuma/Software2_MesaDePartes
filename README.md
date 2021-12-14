@@ -10,10 +10,13 @@ Solange Aracely Romero Chacón
 Santiago Javier Vilca Limachi
 
 ## PROYECTO
-Anderson Bastidas, https://github.com/Anders87x/Tutorial_MesaDePartes 
+[Anderson Bastidas](https://github.com/Anders87x/Tutorial_MesaDePartes) 
 
 ### Propósito
 ### Funcionalidades
 ### Arquitectura
 
 ## PLAN
+
+## REPORTE DE SONARQUBE
+![reporte](Imagenes/sonarQube.png)
