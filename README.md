@@ -20,12 +20,3 @@ Santiago Javier Vilca Limachi
 
 ## REPORTE DE SONARQUBE
 ![reporte](Imagenes/sonarQube.png)
-
-### Vulnerabilidad (6)
-![reporteV](Imagenes/Vulnerabilidad.png)
-
-### Bugs (436)
-![reporteB](Imagenes/Bugs.png)
-
-## Code Smell (6.3k)
-![reporteCS](Imagenes/codeSmell.png)
