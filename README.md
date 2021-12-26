@@ -17,6 +17,10 @@ Santiago Javier Vilca Limachi
 ### Arquitectura
 
 ### Plan
+![plan](Imagenes/plan.png)
+
+## Gestión de Issues
+[Trello](https://trello.com/b/IEpbXa8p) 
 
 ## Análisis Estático con SONARQUBE
 ![reporte](Imagenes/sonarQube.png)
