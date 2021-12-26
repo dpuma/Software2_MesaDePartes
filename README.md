@@ -17,7 +17,7 @@ Santiago Javier Vilca Limachi
 ### Arquitectura
 
 ### Plan
-![plan](Imagenes/plan.png)
+![plan](Imagenes/Actividades.png)
 
 ## Gestión de Issues
 [Trello](https://trello.com/b/IEpbXa8p) 
