@@ -28,14 +28,14 @@
 
         case "activarydesactivar":
             $datos=$menu->get_menu_x_id($_POST["men_id"]);
-            if(is_array($datos)==true and count($datos)>0){
+            if(is_array($datos)==true && count($datos)>0){
                 $menu->delete_menu($_POST["men_id"]);
             } 
         break;
 
         case 'mostrar':
             $datos=$menu->get_menu_x_id($_POST["men_id"]);
-            if(is_array($datos)==true and count($datos)>0){
+            if(is_array($datos)==true && count($datos)>0){
                 foreach($datos as $row)
                 {
                     $output["men_id"] = $row["men_id"];

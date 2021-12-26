@@ -7,7 +7,7 @@
 
         case "combo":
             $datos=$categoria->get_categoria();
-            if(is_array($datos)==true and count($datos)>0){
+            if(is_array($datos)==true && count($datos)>0){
                 $html= "<option></option>";
                 foreach($datos as $row)
                 {
