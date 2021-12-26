@@ -44,4 +44,3 @@ Esta tabla muestra, para cada centro en el que se han emitido una o más alertas
 
 ### Recuento de alertas por tipo de alerta
 Esta tabla muestra el número de alertas de cada tipo de alerta, junto con el nivel de riesgo del tipo de alerta. (Los porcentajes entre paréntesis representan cada recuento como porcentaje, redondeado a un decimal, del número total de alertas incluidas en este informe).
-![reporteO3](Imagenes/Owasp3.png)
