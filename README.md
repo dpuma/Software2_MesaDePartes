@@ -16,7 +16,7 @@ Santiago Javier Vilca Limachi
 ### Funcionalidades
 ### Arquitectura
 
-## Plan
+### Plan
 
 ## Reporte de SONARQUBE
 ![reporte](Imagenes/sonarQube.png)
