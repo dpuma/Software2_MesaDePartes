@@ -45,15 +45,3 @@ Esta tabla muestra, para cada centro en el que se han emitido una o más alertas
 ### Recuento de alertas por tipo de alerta
 Esta tabla muestra el número de alertas de cada tipo de alerta, junto con el nivel de riesgo del tipo de alerta. (Los porcentajes entre paréntesis representan cada recuento como porcentaje, redondeado a un decimal, del número total de alertas incluidas en este informe).
 ![reporteO3](Imagenes/Owasp3.png)
-
-## Pruebas de Performance con JMeter
-Se realizo una prueba infinita para ver el rendimiento del programa, donde los resultados fueron:
-
-En View Results Tree:
-![reporteJ1](Imagenes/ResultsTree.png)
-En Aggregate Report: donde vemos el numero de usuarios que testearon cada una de las pruebas y sus tiempos respectivos
-![reporteJ2](Imagenes/AggregateReport.png)
-En Active Threads Over Time, en este observaremos el tiempo de cada uno de los hilos(usuarios) activos.
-![reporteJ3](Imagenes/ActiveThreadsOverTime.png)
-En Response Times Over Time, en este veremos el tiempo de respuesta de cada prueba por hilo(usuario).
-![reporteJ4](Imagenes/ResponseTimesOverTime.png)
