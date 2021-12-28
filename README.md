@@ -17,6 +17,9 @@ El proyecto analizado se trata de una pagina web que trabaja como una mesa de pa
 Dentro de cada sesión se permite almacenar documentos, colocando una referencia, con un titulo y descripcion. 
 El almacenamiento de documentos se realiza desde disco duro a una base de datos, asimismo estos documentos se pueden eliminar.  
 
+![reporte](Imagenes/mesa_de_partes.png)
+
+
 
 ### Plan
 ![plan](Imagenes/plan.png)
