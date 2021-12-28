@@ -12,10 +12,6 @@ Santiago Javier Vilca Limachi
 ## Proyecto
 [Anderson Bastidas](https://github.com/Anders87x/Tutorial_MesaDePartes) 
 
-### Propósito
-### Funcionalidades
-### Arquitectura
-
 ### Plan
 ![plan](Imagenes/plan.png)
 
