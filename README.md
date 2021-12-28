@@ -98,42 +98,42 @@ Su composer.json debería verse similar a esto:
 
 En el siguiente caso estaremos probando la clase USUARIO y Email creada para guardar datos correspondientes
 ## Code
-models/Usuario.php
+models/Usuario.php.
 ![prueba](Imagenes/phpUnit4.PNG)
 
 ### Test Code
-tests/Test.php
+tests/Test.php.
 ![prueba](Imagenes/phpUnit5.PNG)
 
 Crearemos una funcion setUP que nos ayudara a inicializar las variables que usaremos
-Las siguientes funciones realizan pruebas correspondientes a las clases USUARIO y EMAIL
+Las siguientes funciones realizan pruebas correspondientes a las clases USUARIO y EMAIL.
 ![prueba](Imagenes/phpUnit6.PNG)
 
 ### testEmailAdressForUsername()
 se asegura que la funcion Usuario->set_correo_usuario guarde el correo correspondiente
-y devuelva el mismo con la funcion Usuario->get_correo_usuario
+y devuelva el mismo con la funcion Usuario->get_correo_usuario.
 ![prueba](Imagenes/phpUnit7.PNG)
 
 ### testNameForUsername
 se asegura que la funcion Usuario->set_first_name guarde el nombre del usuario
-y devuelva el mismo con la funcion Usuario->get_first_name
+y devuelva el mismo con la funcion Usuario->get_first_name.
 ![prueba](Imagenes/phpUnit8.PNG)
 
 ### testSurNameForUsername
 se asegura que la funcion Usuario->set_sur_name guarde el apellido del usuario
-y devuelva el mismo con la funcion Usuario->get_sur_name
+y devuelva el mismo con la funcion Usuario->get_sur_name.
 ![prueba](Imagenes/phpUnit9.PNG)
 
 ### testFullNameForUsername
 Se asegura que las funciones Usuario->set_first_name guarde el nombre del usuario,
 que la funcion Usuario->set_sur_name guarde el apellido del usuario
-y devuelva el nombre y apellido con la funcion Usuario->get_full_name
+y devuelva el nombre y apellido con la funcion Usuario->get_full_name.
 ![prueba](Imagenes/phpUnit10.PNG)
 
 ## Funciones aun por terminar
-### testCanBeCreatedFromValidEmailAddress(): void
+### testCanBeCreatedFromValidEmailAddress(): void.
 ![prueba](Imagenes/phpUnit11.PNG)
-### testCannotBeCreatedFromInvalidEmailAddress(): void
+### testCannotBeCreatedFromInvalidEmailAddress(): void.
 ![prueba](Imagenes/phpUnit12.PNG)
-### testCanBeUsedAsString(): void
+### testCanBeUsedAsString(): void.
 ![prueba](Imagenes/phpUnit13.PNG)
