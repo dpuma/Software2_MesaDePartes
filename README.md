@@ -22,6 +22,37 @@ Santiago Javier Vilca Limachi
 ## Gestión de Issues
 [Trello](https://trello.com/b/IEpbXa8p) 
 
+## Manual instalación/configuración Pipeline CI Jenkins
+
+### Requisitos previos: 
+
+1. Instalación de Servidor SonarQube https://www.sonarqube.org
+2. Instalación de Servidor Jenkins https://www.jenkins.io
+
+### Pasos para la integración 
+
+- En Servidor de Sonarqube 
+
+1. Generar un token para realizar la autenticación en Jenkins 
+![reporte](Imagenes/SonarqubeToken.png)
+
+- En Jenkins 
+
+1. Instalar el pluguin de Sonarqube 
+![reporte](Imagenes/Jenkins-Sonar01-plugin.png)
+
+2. Configurar las credenciales de Sonarqube
+![reporte](Imagenes/Jenkins-Sonar02-credenciales.png)
+
+3. Agregar SonarQube al sistema de configuración de Jenkins
+![reporte](Imagenes/Jenkins-Sonar03-server.png)
+
+4. Configurar instalación de SonarScanner
+![reporte](Imagenes/Jenkins-Sonar04-scanner.png)
+
+5. Crear y ejecutar el pipeline
+
+
 ## Análisis Estático con SONARQUBE
 ![reporte](Imagenes/sonarQube.png)
 
