@@ -88,52 +88,66 @@ En Response Times Over Time, en este veremos el tiempo de respuesta de cada prue
 
 # Pruebas Unitarias usando PHPUNIT
 Puede agregar PHPUnit como una dependencia local, a su proyecto usando Composer:
+
 ![prueba](Imagenes/phpUnit1.PNG)
 ![prueba1](Imagenes/phpUnit2.PNG)
 
 El ejemplo que se muestra arriba asume que el composer está agregado a su $ PATH.
 Su composer.json debería verse similar a esto:
+
 ![prueba2](Imagenes/phpUnit3.PNG)
 
 
 En el siguiente caso estaremos probando la clase USUARIO y Email creada para guardar datos correspondientes
 ## Code
 models/Usuario.php.
-![prueba](Imagenes/phpUnit4.PNG)
+
+![prueba3](Imagenes/phpUnit4.PNG)
 
 ### Test Code
 tests/Test.php.
-![prueba](Imagenes/phpUnit5.PNG)
+
+![prueba4](Imagenes/phpUnit5.PNG)
 
 Crearemos una funcion setUP que nos ayudara a inicializar las variables que usaremos
 Las siguientes funciones realizan pruebas correspondientes a las clases USUARIO y EMAIL.
-![prueba](Imagenes/phpUnit6.PNG)
+
+![prueba5](Imagenes/phpUnit6.PNG)
 
 ### testEmailAdressForUsername()
 se asegura que la funcion Usuario->set_correo_usuario guarde el correo correspondiente
 y devuelva el mismo con la funcion Usuario->get_correo_usuario.
-![prueba](Imagenes/phpUnit7.PNG)
+
+![prueba6](Imagenes/phpUnit7.PNG)
 
 ### testNameForUsername
 se asegura que la funcion Usuario->set_first_name guarde el nombre del usuario
 y devuelva el mismo con la funcion Usuario->get_first_name.
-![prueba](Imagenes/phpUnit8.PNG)
+
+![prueba7](Imagenes/phpUnit8.PNG)
 
 ### testSurNameForUsername
 se asegura que la funcion Usuario->set_sur_name guarde el apellido del usuario
 y devuelva el mismo con la funcion Usuario->get_sur_name.
-![prueba](Imagenes/phpUnit9.PNG)
+
+![prueba8](Imagenes/phpUnit9.PNG)
 
 ### testFullNameForUsername
 Se asegura que las funciones Usuario->set_first_name guarde el nombre del usuario,
 que la funcion Usuario->set_sur_name guarde el apellido del usuario
 y devuelva el nombre y apellido con la funcion Usuario->get_full_name.
-![prueba](Imagenes/phpUnit10.PNG)
+
+![prueba9](Imagenes/phpUnit10.PNG)
 
 ## Funciones aun por terminar
 ### testCanBeCreatedFromValidEmailAddress(): void.
-![prueba](Imagenes/phpUnit11.PNG)
+
+![prueba10](Imagenes/phpUnit11.PNG)
+
 ### testCannotBeCreatedFromInvalidEmailAddress(): void.
-![prueba](Imagenes/phpUnit12.PNG)
+
+![prueba11](Imagenes/phpUnit12.PNG)
+
 ### testCanBeUsedAsString(): void.
-![prueba](Imagenes/phpUnit13.PNG)
+
+![prueba12](Imagenes/phpUnit13.PNG)
