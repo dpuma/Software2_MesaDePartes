@@ -57,13 +57,7 @@ El almacenamiento de documentos se realiza desde disco duro a una base de datos,
 
 5. Crear y ejecutar el pipeline
 
-- En OWASP ZAP
-
-1. Hacer un Manual Explore, es decir con la url de la página a evaluar, hacer una navegación manual.
-
-2. Guardarlo
-
-- En Jenkins
+- Jenkins con OWASP ZAP
 
 1. Instalar ZAP Jenkins Plugin
 ![zap](Imagenes/InstalacionOWASP_Jenkins.png)
