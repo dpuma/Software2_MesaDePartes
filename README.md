@@ -12,6 +12,12 @@ Santiago Javier Vilca Limachi
 ## Proyecto
 [Anderson Bastidas](https://github.com/Anders87x/Tutorial_MesaDePartes) 
 
+El proyecto analizado se trata de una pagina web que trabaja como una mesa de partes, donde cuenta con un sesiones de usuarios, logueo, un formulario de registro para nuevos usuarios, opcion para recuperacion de contraseña. 
+
+Dentro de cada sesión se permite almacenar documentos, colocando una referencia, con un titulo y descripcion. 
+El almacenamiento de documentos se realiza desde disco duro a una base de datos, asimismo estos documentos se pueden eliminar.  
+
+
 ### Plan
 ![plan](Imagenes/plan.png)
 
