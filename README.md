@@ -84,3 +84,45 @@ En Active Threads Over Time, en este observaremos el tiempo de cada uno de los h
 ![reporteJ3](Imagenes/ActiveThreadsOverTime.png)
 En Response Times Over Time, en este veremos el tiempo de respuesta de cada prueba por hilo(usuario).
 ![reporteJ4](Imagenes/ResponseTimesOverTime.png)
+
+
+### Pruebas Unitarias usando PHPUNIT
+Puede agregar PHPUnit como una dependencia local, a su proyecto usando Composer:
+
+
+El ejemplo que se muestra arriba asume que el composer está agregado a su $ PATH.
+Su composer.json debería verse similar a esto:
+
+
+
+En el siguiente caso estaremos probando la clase USUARIO y Email creada para guardar datos correspondientes
+## Code
+models/Usuario.php
+
+## Test Code
+tests/Test.php
+
+Crearemos una funcion setUP que nos ayudara a inicializar las variables que usaremos
+Las siguientes funciones realizan pruebas correspondientes a las clases USUARIO y EMAIL
+
+# testEmailAdressForUsername()
+se asegura que la funcion Usuario->set_correo_usuario guarde el correo correspondiente
+y devuelva el mismo con la funcion Usuario->get_correo_usuario
+
+# testNameForUsername
+se asegura que la funcion Usuario->set_first_name guarde el nombre del usuario
+y devuelva el mismo con la funcion Usuario->get_first_name
+
+# testSurNameForUsername
+se asegura que la funcion Usuario->set_sur_name guarde el apellido del usuario
+y devuelva el mismo con la funcion Usuario->get_sur_name
+
+# testFullNameForUsername
+Se asegura que las funciones Usuario->set_first_name guarde el nombre del usuario,
+que la funcion Usuario->set_sur_name guarde el apellido del usuario
+y devuelva el nombre y apellido con la funcion Usuario->get_full_name
+
+## Funciones aun por terminar
+# testCanBeCreatedFromValidEmailAddress(): void
+# testCannotBeCreatedFromInvalidEmailAddress(): void
+# testCanBeUsedAsString(): void
