@@ -48,6 +48,44 @@ Santiago Javier Vilca Limachi
 
 5. Crear y ejecutar el pipeline
 
+- En OWASP ZAP
+
+1. Hacer un Manual Explore, es decir con la url de la página a evaluar, hacer una navegación manual.
+
+2. Guardarlo
+
+- En Jenkins
+
+1. Instalar ZAP Jenkins Plugin
+![zap](Imagenes/InstalacionOWASP_Jenkins.png)
+
+2. Instalar ZAP localmente
+
+En Administrar Jenkins -> Configuración global de herramientas , hacemos click en Instalación de herramientas personalizadas. 
+En la sección de herramientas personalizadas proporcionamos el enlace descargable OWASP ZAP tar y el nombre del directorio.
+
+3. Configurar ZAP en Jenkins
+
+Aquí colocamos en Host y Puerto ZAP. Para ello accedemos a Administrar Jenkins -> Configurar sistema
+![zap](Imagenes/HostPuerto.png)
+
+4. Crear una tarea nueva de estilo libre
+![zap](Imagenes/Owasp_Jenkins1.png)
+
+5. Configuracion
+
+En entorno de ejecución, seleccionamos la opción Instalar herramientas personalizadas y seleccionamos ZAP.
+![zap](Imagenes/Owasp_Jenkins2.png)
+
+6. Ejecutamos ZAP
+En Ejecutar, seleccionamos ejecutar ZAP.
+![zap](Imagenes/Owasp_Jenkins3.png)
+
+7. Instalamos y configuración de ZAP
+![zap](Imagenes/Owasp_Jenkins4.png)
+![zap](Imagenes/Owasp_Jenkins7.png)
+![zap](Imagenes/Owasp_Jenkins8.png)
+![zap](Imagenes/Owasp_Jenkins9.png)
 
 ## Análisis Estático con SONARQUBE
 ![reporte](Imagenes/sonarQube.png)
