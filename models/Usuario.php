@@ -1,6 +1,10 @@
 <?php
     class Usuario extends Conectar {
         
+		public $email_valid;
+		public $name;
+		public $surname;
+/*
         public function login(){
 			$conectar=parent::Conexion();
 			parent::set_names();
@@ -9,7 +13,7 @@
 				$password = $_POST["password"];
 				$correo = $_POST["correo"];
 
-				if(empty($correo) && empty($password)){
+				if(empty($correo) and empty($password)){
 					header("Location:".Conectar::ruta()."index.php?m=2");
 					exit();
 				}
@@ -20,7 +24,7 @@
 				$sql->bindValue(2, $password);
 				$sql->execute();
 				$resultado = $sql->fetch();
-					if(is_array($resultado) && count($resultado)>0){
+					if(is_array($resultado) and count($resultado)>0){
 						$_SESSION["usu_id"] = $resultado["usu_id"];
                         $_SESSION["usu_nom"] = $resultado["usu_nom"];
                         $_SESSION["usu_ape"] = $resultado["usu_ape"];
@@ -47,7 +51,7 @@
             $sql->execute();
 		}
 		
-		public function get_correo_usuario($usu_correo){
+		/*public function get_correo_usuario($usu_correo){
             $conectar= parent::conexion();
             parent::set_names();
             $sql="SELECT * FROM tm_usuario WHERE usu_correo=? AND est=1;";
@@ -55,7 +59,35 @@
 			$sql->bindValue(1,$usu_correo);
 			$sql->execute();
 			return $resultado=$sql->fetchAll();
-        }
+        }*/
 
+		public function get_correo_usuario()
+		{
+			return $this->email_valid;
+		}
+
+		public function set_correo_usuario($email_valid)
+		{
+			$this->email_valid = $email_valid;
+		}
+		
+		public function set_first_name($name)
+		{
+			$this->name = $name;
+		}
+
+		public function get_first_name()
+		{
+			return $this->name;
+		}
+		public function set_sur_name($name)
+		{
+			$this->surname = $name;
+		}
+
+		public function get_full_name()
+		{
+			return $this->first_name.''.$this->surname;
+		}
     }
 ?>
