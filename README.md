@@ -86,43 +86,54 @@ En Response Times Over Time, en este veremos el tiempo de respuesta de cada prue
 ![reporteJ4](Imagenes/ResponseTimesOverTime.png)
 
 
-### Pruebas Unitarias usando PHPUNIT
+# Pruebas Unitarias usando PHPUNIT
 Puede agregar PHPUnit como una dependencia local, a su proyecto usando Composer:
-
+![prueba](Imagenes/phpUnit1.png)
+![prueba1](Imagenes/phpUnit2.png)
 
 El ejemplo que se muestra arriba asume que el composer está agregado a su $ PATH.
 Su composer.json debería verse similar a esto:
-
+![prueba2](Imagenes/phpUnit3.png)
 
 
 En el siguiente caso estaremos probando la clase USUARIO y Email creada para guardar datos correspondientes
 ## Code
 models/Usuario.php
+![prueba](Imagenes/phpUnit4.png)
 
-## Test Code
+### Test Code
 tests/Test.php
+![prueba](Imagenes/phpUnit5.png)
 
 Crearemos una funcion setUP que nos ayudara a inicializar las variables que usaremos
 Las siguientes funciones realizan pruebas correspondientes a las clases USUARIO y EMAIL
+![prueba](Imagenes/phpUnit6.png)
 
-# testEmailAdressForUsername()
+### testEmailAdressForUsername()
 se asegura que la funcion Usuario->set_correo_usuario guarde el correo correspondiente
 y devuelva el mismo con la funcion Usuario->get_correo_usuario
+![prueba](Imagenes/phpUnit7.png)
 
-# testNameForUsername
+### testNameForUsername
 se asegura que la funcion Usuario->set_first_name guarde el nombre del usuario
 y devuelva el mismo con la funcion Usuario->get_first_name
+![prueba](Imagenes/phpUnit8.png)
 
-# testSurNameForUsername
+### testSurNameForUsername
 se asegura que la funcion Usuario->set_sur_name guarde el apellido del usuario
 y devuelva el mismo con la funcion Usuario->get_sur_name
+![prueba](Imagenes/phpUnit9.png)
 
-# testFullNameForUsername
+### testFullNameForUsername
 Se asegura que las funciones Usuario->set_first_name guarde el nombre del usuario,
 que la funcion Usuario->set_sur_name guarde el apellido del usuario
 y devuelva el nombre y apellido con la funcion Usuario->get_full_name
+![prueba](Imagenes/phpUnit10.png)
 
 ## Funciones aun por terminar
-# testCanBeCreatedFromValidEmailAddress(): void
-# testCannotBeCreatedFromInvalidEmailAddress(): void
-# testCanBeUsedAsString(): void
+### testCanBeCreatedFromValidEmailAddress(): void
+![prueba](Imagenes/phpUnit11.png)
+### testCannotBeCreatedFromInvalidEmailAddress(): void
+![prueba](Imagenes/phpUnit12.png)
+### testCanBeUsedAsString(): void
+![prueba](Imagenes/phpUnit13.png)
