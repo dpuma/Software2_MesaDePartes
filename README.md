@@ -61,33 +61,63 @@ El almacenamiento de documentos se realiza desde disco duro a una base de datos,
 
 - Jenkins con OWASP ZAP
 
-1. Instalar ZAP Jenkins Plugin
-![zap](Imagenes/InstalacionOWASP_Jenkins.png)
+1. Configurar Dependency-Check
+![zap](Imagenes/O1.png)
 
-2. Instalar ZAP localmente
+2. Crear pipeline
+![zap](Imagenes/O2.png)
+Script
+`def scan_type
+ def target
+ pipeline {
+     agent any
+     parameters {
+         choice  choices: ["Baseline", "APIS", "Full"],
+                 description: 'Type of scan that is going to perform inside the container',
+                 name: 'SCAN_TYPE'
+ 
+         string defaultValue: "https://example.com",
+                 description: 'Target URL to scan',
+                 name: 'TARGET'
+ 
+         booleanParam defaultValue: true,
+                 description: 'Parameter to know if wanna generate report.',
+                 name: 'GENERATE_REPORT'
+     }
+     stages {
+         stage('Pipeline Info') {
+                 steps {
+                     script {
+                         echo "<--Parameter Initialization-->"
+                         echo """
+                         The current parameters are:
+                             Scan Type: ${params.SCAN_TYPE}
+                             Target: ${params.TARGET}
+                             Generate report: ${params.GENERATE_REPORT}
+                         """
+                     }
+                 }
+         }
+ 
+         stage ('Pruebas de Seguridad: OWASP Dependency-Check Vulnerabilities') {
+            steps {
+                dependencyCheck additionalArguments: ''' 
+                    -o "./" 
+                    -s "./"
+                    -f "ALL" 
+                    --disableYarnAudit
+                    --prettyPrint''', odcInstallation: 'Vulnerability6'
 
-En Administrar Jenkins -> Configuración global de herramientas , hacemos click en Instalación de herramientas personalizadas. 
-En la sección de herramientas personalizadas proporcionamos el enlace descargable OWASP ZAP tar y el nombre del directorio.
+                dependencyCheckPublisher pattern: 'dependency-check-report.xml'
+            }
+        }
 
-3. Configurar ZAP en Jenkins
+     }
 
-Aquí colocamos en Host y Puerto ZAP. Para ello accedemos a Administrar Jenkins -> Configurar sistema
-![zap](Imagenes/HostPuerto.png)
+ }`
 
-4. Crear una tarea nueva de estilo libre
-![zap](Imagenes/Owasp_Jenkins1.png)
-
-5. Configuracion. En entorno de ejecución, seleccionamos la opción Instalar herramientas personalizadas y seleccionamos ZAP.
-![zap](Imagenes/Owasp_Jenkins2.png)
-
-6. Ejecutamos ZAP
-![zap](Imagenes/Owasp_Jenkins3.png)
-
-7. Instalamos y configuración de ZAP
-![zap](Imagenes/Owasp_Jenkins4.png)
-![zap](Imagenes/Owasp_Jenkins7.png)
-![zap](Imagenes/Owasp_Jenkins8.png)
-![zap](Imagenes/Owasp_Jenkins9.png)
+3. Resultados
+![zap](Imagenes/O3.png)
 
 - Jenkins con JMeter
 1. Realizar el analisis con JMeter creando una Tabla de Resultados y guardarlo.
@@ -96,7 +126,7 @@ Aquí colocamos en Host y Puerto ZAP. Para ello accedemos a Administrar Jenkins 
 ![JMeter](Imagenes/Jenkins_JMeter2.png)
 3. Resultados
 ![JMeter](Imagenes/Jenkins_JMeter3.png)
-
+![zap](Imagenes/O5.png)
 
 ## Análisis Estático con SONARQUBE
 ![reporte](Imagenes/sonarQube.png)
