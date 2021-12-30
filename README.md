@@ -68,7 +68,8 @@ El almacenamiento de documentos se realiza desde disco duro a una base de datos,
 ![zap](Imagenes/O2.png)
 Script
 
-`def scan_type
+```
+def scan_type
  def target
  pipeline {
      agent any
@@ -108,7 +109,8 @@ Script
             }
         }
      }
- }`
+ }
+ ```
 
 3. Resultados
 ![zap](Imagenes/O3.jpeg)
