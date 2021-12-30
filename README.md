@@ -87,6 +87,15 @@ Aquí colocamos en Host y Puerto ZAP. Para ello accedemos a Administrar Jenkins 
 ![zap](Imagenes/Owasp_Jenkins8.png)
 ![zap](Imagenes/Owasp_Jenkins9.png)
 
+- Jenkins con JMeter
+1. Realizar el analisis con JMeter creando una Tabla de Resultados y guardarlo.
+![JMeter](Imagenes/Jenkins_JMeter1.png)
+2. Crear una nueva tarea en Jenkins, y configurar de la siguiente manera.
+![JMeter](Imagenes/Jenkins_JMeter2.png)
+3. Resultados
+![JMeter](Imagenes/Jenkins_JMeter3.png)
+
+
 ## Análisis Estático con SONARQUBE
 ![reporte](Imagenes/sonarQube.png)
 
