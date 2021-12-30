@@ -76,11 +76,9 @@ Script
          choice  choices: [Baseline, APIS, Full],
                  description: Type of scan that is going to perform inside the container,
                  name: SCAN_TYPE
- 
          string defaultValue: https://example.com,
                  description: Target URL to scan,
                  name: TARGET
- 
          booleanParam defaultValue: true,
                  description: Parameter to know if wanna generate report.,
                  name: GENERATE_REPORT
@@ -95,7 +93,6 @@ Script
                              Scan Type: ${params.SCAN_TYPE}
                              Target: ${params.TARGET}
                              Generate report: ${params.GENERATE_REPORT}
-                         """
                      }
                  }
          }
@@ -107,7 +104,6 @@ Script
                     -f ALL 
                     --disableYarnAudit
                     --prettyPrint, odcInstallation: Vulnerability6
-
                 dependencyCheckPublisher pattern: dependency-check-report.xml
             }
         }
