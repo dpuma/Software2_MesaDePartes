@@ -73,24 +73,24 @@ Script
  pipeline {
      agent any
      parameters {
-         choice  choices: ["Baseline", "APIS", "Full"],
-                 description: 'Type of scan that is going to perform inside the container',
-                 name: 'SCAN_TYPE'
+         choice  choices: [Baseline, APIS, Full],
+                 description: Type of scan that is going to perform inside the container,
+                 name: SCAN_TYPE
  
-         string defaultValue: "https://example.com",
-                 description: 'Target URL to scan',
-                 name: 'TARGET'
+         string defaultValue: https://example.com,
+                 description: Target URL to scan,
+                 name: TARGET
  
          booleanParam defaultValue: true,
-                 description: 'Parameter to know if wanna generate report.',
-                 name: 'GENERATE_REPORT'
+                 description: Parameter to know if wanna generate report.,
+                 name: GENERATE_REPORT
      }
      stages {
-         stage('Pipeline Info') {
+         stage(Pipeline Info) {
                  steps {
                      script {
-                         echo "<--Parameter Initialization-->"
-                         echo """
+                         echo <--Parameter Initialization-->
+                         echo 
                          The current parameters are:
                              Scan Type: ${params.SCAN_TYPE}
                              Target: ${params.TARGET}
@@ -99,22 +99,19 @@ Script
                      }
                  }
          }
- 
-         stage ('Pruebas de Seguridad: OWASP Dependency-Check Vulnerabilities') {
+         stage (Pruebas de Seguridad: OWASP Dependency-Check Vulnerabilities) {
             steps {
-                dependencyCheck additionalArguments: ''' 
-                    -o "./" 
-                    -s "./"
-                    -f "ALL" 
+                dependencyCheck additionalArguments: 
+                    -o ./
+                    -s ./
+                    -f ALL 
                     --disableYarnAudit
-                    --prettyPrint''', odcInstallation: 'Vulnerability6'
+                    --prettyPrint, odcInstallation: Vulnerability6
 
-                dependencyCheckPublisher pattern: 'dependency-check-report.xml'
+                dependencyCheckPublisher pattern: dependency-check-report.xml
             }
         }
-
      }
-
  }`
 
 3. Resultados
