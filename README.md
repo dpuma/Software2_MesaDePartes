@@ -67,6 +67,7 @@ El almacenamiento de documentos se realiza desde disco duro a una base de datos,
 2. Crear pipeline
 ![zap](Imagenes/O2.png)
 Script
+
 `def scan_type
  def target
  pipeline {
@@ -117,7 +118,7 @@ Script
  }`
 
 3. Resultados
-![zap](Imagenes/O3.png)
+![zap](Imagenes/O3.jpeg)
 
 - Jenkins con JMeter
 1. Realizar el analisis con JMeter creando una Tabla de Resultados y guardarlo.
