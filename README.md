@@ -27,6 +27,8 @@ El almacenamiento de documentos se realiza desde disco duro a una base de datos,
 ## Gestión de Issues
 [Trello](https://trello.com/b/IEpbXa8p) 
 
+![plan](Imagenes/trello.png)
+
 ## Manual instalación/configuración Pipeline CI Jenkins
 
 ### Requisitos previos: 
